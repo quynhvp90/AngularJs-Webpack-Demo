@@ -3,7 +3,7 @@ import HOME_COMPONENT from './components/home/home-component';
 import ABOUT_COMPONENT from './components/about/about-component';
 
 // console.log('home: = ', HOME_COMPONENT.templateUrl)
-let app = angular.module('AngularComponentDemo', ['ui.router'])
+let app = angular.module('AngularWebpackDemo', ['ui.router'])
 .component('homeComponent', HOME_COMPONENT)
 .component('aboutComponent', ABOUT_COMPONENT);
 

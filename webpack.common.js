@@ -91,7 +91,6 @@ module.exports = function() {
       template: './src/index.html'
     })
   ];
-  console.log('copy ==== ', config.plugins[0].patterns);
   config.optimization = {
     emitOnErrors: true,
   };

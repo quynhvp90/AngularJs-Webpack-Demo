@@ -3,7 +3,7 @@
 // (function() {
 //   'use strict';
 //   console.log('home start');
-//   angular.module('AngularComponentDemo', [])
+//   angular.module('AngularWebpackDemo', [])
 //   .directive('homeComponent', homeComponent);
 //   function homeComponent() {
 //     var directive = {
