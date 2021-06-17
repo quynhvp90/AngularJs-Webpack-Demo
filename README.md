@@ -10,10 +10,10 @@ Run script for install packages
  
  
 # Run production
- npm install serve
 
  npm run prod
-
- serve -s dist
+ => create folder build production "dist"
+ 
+ npm run server
 
 application demo run production default localhost:5000
