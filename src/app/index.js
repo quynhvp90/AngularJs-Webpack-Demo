@@ -1,16 +1,13 @@
 import '@uirouter/angularjs';
-import HOME_COMPONENT from './components/home-component';
-import ABOUT_COMPONENT from './components/about-component';
-// angular.module('AngularComponentDemo', []).controller('homeController',['$scope', function($scope) {
-//   $scope.messsage = 'Home controller';
-//   $scope.name = 'App';
-// }]);
+import HOME_COMPONENT from './components/home/home-component';
+import ABOUT_COMPONENT from './components/about/about-component';
 
+// console.log('home: = ', HOME_COMPONENT.templateUrl)
 let app = angular.module('AngularComponentDemo', ['ui.router'])
 .component('homeComponent', HOME_COMPONENT)
 .component('aboutComponent', ABOUT_COMPONENT);
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(['$stateProvider', function($stateProvider) {
   var homeState = {
     name: 'Home',
     url: '/',
@@ -26,7 +23,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state(homeState);
   $stateProvider.state(aboutState);
 
-});
+}]);
 app.config(['$locationProvider', function($locationProvider) {
   $locationProvider.html5Mode(true);
+  // $locationProvider.debugInfoEnabled(false);
 }]);

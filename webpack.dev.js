@@ -2,15 +2,14 @@ const { merge } = require('webpack-merge');
 const path = require('path');
 const common = require('./webpack.common.js');
 
+
 module.exports = merge(common, {
-  // mode: 'production',
-  // devtool: 'source-map',
   mode: 'development',
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   devServer: {
     publicPath: '/',
     contentBase: path.join(process.cwd(), 'dist'),
-    port: 3300,
+    port: 3000,
     historyApiFallback: true
   }
 });
