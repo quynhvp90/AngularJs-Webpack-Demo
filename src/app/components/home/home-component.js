@@ -1,5 +1,4 @@
 
-// /* global angular */
 // (function() {
 //   'use strict';
 //   console.log('home start');
@@ -8,14 +7,12 @@
 //   function homeComponent() {
 //     var directive = {
 //       restrict: 'E',
-//       // templateUrl: 'app/components/home/home.html',
-//       template: '12345',
+//       templateUrl: '/app/components/home/home.html',
 //       controller: controller,
 //       controllerAs: 'vm',
 //       bindToController: true,
 //     };
 //     return directive;
-//     console.log('Home 1');
 //     function controller($scope, $log) {
 //       var vm = this;
 //       console.log('Home');
@@ -32,6 +29,6 @@ function homeComponent() {
 const HOME_COMPONENT = {
   controller: homeComponent,
   controllerAs: 'vm',
-  templateUrl: 'app/components/home/home.html'
+  templateUrl: '/app/components/home/home.html'
 }
 export default HOME_COMPONENT;
