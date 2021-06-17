@@ -13,6 +13,7 @@ Run script for install packages
 # Run production
 
  npm run prod
+ 
  => create folder build production "dist"
  
  npm run server
